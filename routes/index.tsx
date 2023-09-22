@@ -13,9 +13,6 @@ export default async function Home() {
 
   return (
     <>
-      <Head>
-        <title>Where is Libgen now?</title>
-      </Head>
       <div class="px-4 py-8 h-screen text-gray-800 flex flex-col">
         <main class="max-w-screen-md mx-auto flex flex-col items-center justify-center flex-grow">
           <p class="text-3xl text-gray-500">
@@ -23,7 +20,7 @@ export default async function Home() {
           </p>
 
           <a
-            class="text-7xl p-8 text-blue-600 font-semibold"
+            class="text-7xl p-8 text-blue-800 underline decoration-sky-500 hover:bg-sky-200 font-semibold"
             href={mainUrl}
             rel="noopener"
             target="_blank"
@@ -31,7 +28,12 @@ export default async function Home() {
             {mainUrl}
           </a>
           <p class="text-2xl">
-            <a href="/go" rel="noopener" target="_blank" class="text-blue-700">
+            <a
+              href="/go"
+              rel="noopener"
+              target="_blank"
+              class="text-blue-800 underline hover:bg-sky-200 decoration-sky-500"
+            >
               /go
             </a>{"   "}
             always takes you to the active server. Bookmark it.
@@ -44,7 +46,7 @@ export default async function Home() {
             {otherUrls.map((url) => (
               <li>
                 <a
-                  class="text-blue-600 font-semibold"
+                  class="text-blue-800 underline decoration-sky-500 hover:bg-sky-200 font-semibold"
                   href={url}
                   rel="noopener"
                   target="_blank"
@@ -62,7 +64,7 @@ export default async function Home() {
             Powered by{" "}
             <a
               href="https://www.wikidata.org/wiki/Wikidata:Main_Page"
-              class="text-blue-700"
+              class="text-blue-800 underline decoration-sky-500 hover:bg-sky-200 opacity-0.7"
             >
               Wikidata
             </a>.
